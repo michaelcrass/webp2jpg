@@ -30,7 +30,7 @@ class Programm:
 
 
         #testmodus: delete all jpg-files in (sub-)folders
-        self.testing = True
+        self.testing = False
         if self.testing:
             self._logger.info("testing")
             self.get_webp_files()
