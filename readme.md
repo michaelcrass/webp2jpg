@@ -1,0 +1,1 @@
+This pgramm converts webp/avif/jiff-files to .jpg, if they are in the same folder as the script (and subfolders).
