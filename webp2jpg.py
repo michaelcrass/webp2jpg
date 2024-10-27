@@ -33,6 +33,11 @@ class Programm:
         self.testing = False
         if self.testing:
             self._logger.info("testing")
+
+            if input("This testing mode deletes alls jpg-files that are in the same folder as the script (or subfolders). Continue? (y/n)") != "y":
+                self._logger.info("Program ended by user.")
+                return
+            
             self.get_webp_files()
             return
 
