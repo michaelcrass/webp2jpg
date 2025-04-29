@@ -13,7 +13,7 @@ class Programm:
         # Configure logging
         self._logger = logging.getLogger(__name__)
         logging_format = "%(asctime)s - %(levelname)s - %(module)s - %(message)s"
-        logging.basicConfig(filename=f"webp2jpg_{date.today()}.log", level="INFO",format=logging_format)
+        logging.basicConfig(filename=f"log_webp2jpg_{date.today()}.log", level="INFO",format=logging_format)
 
         # Add a console handler to show log entries as print in console
         console_handler = logging.StreamHandler()
